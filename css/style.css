@@ -55,3 +55,32 @@ p {
     text-align: center;
     color: var(--light);
 }
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 3rem;
+}
+
+.service h2 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.service h2::after {
+    height: 0.7rem;
+    width: 20rem;
+    margin-top: 1rem;
+    background-color: var(--primary);
+    content: "";
+    display: block;
+    margin: 1rem auto 0 auto;
+}
+
+.services i {
+    font-size: 3rem;
+    display: grid;
+    align-items: center;
+    color: var(--secondary);
+    text-align: center;
+}
