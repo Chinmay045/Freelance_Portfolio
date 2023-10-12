@@ -82,9 +82,33 @@ p {
     color: var(--secondary);
 }
 
+
+
+
+
+
+.item h3 {
+    display: grid;
+}
+
+.item h3::after {
+    content: '';
+    display: block;
+    height: .2rem;
+    width: 2rem;
+    background-color: var(--primary);
+}
+
+.item:nth-child(3) {
+    grid-row-end: span 2;
+}
+
+/** Footer */
 .footer {
     background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     margin-top: 3rem;
     padding: 2rem 0;
     color: var(--light);
@@ -92,6 +116,5 @@ p {
 
 .footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
